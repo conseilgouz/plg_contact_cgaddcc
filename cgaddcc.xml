@@ -7,10 +7,11 @@
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>CG_ADDCC_XML_DESCRIPTION</description>
     <namespace path="src">Conseilgouz\Plugin\Contact\CGAddCC</namespace>
 	<scriptfile>script.php</scriptfile>
+	<changelogurl>https://raw.githubusercontent.com/conseilgouz/plg_contact_cgaddcc/master/plg_contact_cgaddcc_changelog.xml</changelogurl>
 	<files>
 		<folder plugin="cgaddcc">services</folder>
 		<folder>src</folder>

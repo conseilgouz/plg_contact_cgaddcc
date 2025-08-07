@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="contact" method="upgrade">
+	<name>CG_ADDCC</name>
+	<author>ConseilGouz</author>
+	<creationDate>2025-08-06</creationDate>
+	<copyright>(C)2025 ConseilGouz. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
+	<authorUrl>www.conseilgouz.com</authorUrl>
+	<version>1.0.0</version>
+	<description>CG_ADDCC_XML_DESCRIPTION</description>
+    <namespace path="src">Conseilgouz\Plugin\Contact\CGAddCC</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<folder plugin="cgaddcc">services</folder>
+		<folder>src</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="fr-FR">language/fr-FR/plg_contact_cgaddcc.ini</language>
+		<language tag="fr-FR">language/fr-FR/plg_contact_cgaddcc.sys.ini</language>
+		<language tag="en-GB">language/en-GB/plg_contact_cgaddcc.ini</language>
+		<language tag="en-GB">language/en-GB/plg_contact_cgaddcc.sys.ini</language>
+	</languages>
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+				<field name="user"
+					type="radio" class="btn-group btn-group-yesno"
+					default="group"
+					label="PLG_CONTACT_CGADDCC_USER"
+                    description="PLG_CONTACT_CGADDCC_USER_DESC"
+				>
+					<option value="group">PLG_CONTACT_CGADDCC_GROUP</option>
+					<option value="email">PLG_CONTACT_CGADDCC_EMAIL</option>
+				</field>
+                <field name="usergroups" type="usergrouplist" showon="user:group"
+                        description="PLG_CONTACT_CGADDCC_GROUPLST_DESC" label="PLG_CONTACT_CGADDCC_GROUPLST"
+                        multiple="true"
+                        layout="joomla.form.field.list-fancy-select">
+                </field>
+				<field name="email" showon="user:email"
+					type="text" default=""
+					label="PLG_CONTACT_CGADDCC_EMAILFLD"
+                    description="PLG_CONTACT_CGADDCC_EMAILFLD_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>	
+    <updateservers>
+        <server type="extension" name="cgaddcc">https://raw.githubusercontent.com/conseilgouz/updates_github/master/plg_contact_cgaddcc_update.xml</server>
+    </updateservers>
+</extension>

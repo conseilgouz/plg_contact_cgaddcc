@@ -7,7 +7,7 @@
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<description>CG_ADDCC_XML_DESCRIPTION</description>
     <namespace path="src">Conseilgouz\Plugin\Contact\CGAddCC</namespace>
 	<scriptfile>script.php</scriptfile>

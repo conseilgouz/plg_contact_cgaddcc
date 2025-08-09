@@ -3,6 +3,18 @@
 		<element>cgaddcc</element>
 		<type>plugin</type>
 		<group>contact</group>
+		<version>1.0.3</version>
+        <note>
+            <item>Update : 09/08/2025</item>
+        </note>
+        <fix>
+            <item>Do not enable this plugin during installation/update</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>cgaddcc</element>
+		<type>plugin</type>
+		<group>contact</group>
 		<version>1.0.2</version>
         <note>
             <item>Update : 09/08/2025</item>

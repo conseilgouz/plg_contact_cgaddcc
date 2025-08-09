@@ -104,6 +104,7 @@ class plgcontactcgaddccInstallerScript
             }
         }
         // enable plugin
+        /* do not enable it by default 
         $conditions = array(
             $db->qn('type') . ' = ' . $db->q('plugin'),
             $db->qn('element') . ' = ' . $db->quote($this->extname)
@@ -118,6 +119,7 @@ class plgcontactcgaddccInstallerScript
         } catch (\RuntimeException $e) {
             Log::add('unable to enable '.$this->name, Log::ERROR, 'jerror');
         }
+        */
     }
     // Check if Joomla version passes minimum requirement
     private function passMinimumJoomlaVersion()

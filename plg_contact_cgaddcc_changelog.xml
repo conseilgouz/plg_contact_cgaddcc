@@ -5,6 +5,18 @@
 		<group>contact</group>
 		<version>1.0.1</version>
         <note>
+            <item>Update : 09/08/2025</item>
+        </note>
+        <fix>
+            <item>Set default group to 8 : super users group</item>
+        </fix>
+	</changelog>
+	<changelog>
+		<element>cgaddcc</element>
+		<type>plugin</type>
+		<group>contact</group>
+		<version>1.0.1</version>
+        <note>
             <item>Update : 07/08/2025</item>
         </note>
         <addition>

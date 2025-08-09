@@ -2,12 +2,12 @@
 <extension version="4.0" type="plugin" group="contact" method="upgrade">
 	<name>CG_ADDCC</name>
 	<author>ConseilGouz</author>
-	<creationDate>2025-08-06</creationDate>
+	<creationDate>2025-08-09</creationDate>
 	<copyright>(C)2025 ConseilGouz. All rights reserved.</copyright>
 	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
 	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
 	<authorUrl>www.conseilgouz.com</authorUrl>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>CG_ADDCC_XML_DESCRIPTION</description>
     <namespace path="src">Conseilgouz\Plugin\Contact\CGAddCC</namespace>
 	<scriptfile>script.php</scriptfile>
@@ -37,7 +37,7 @@
 				</field>
                 <field name="usergroups" type="usergrouplist" showon="user:group"
                         description="PLG_CONTACT_CGADDCC_GROUPLST_DESC" label="PLG_CONTACT_CGADDCC_GROUPLST"
-                        multiple="true"
+                        multiple="true" default="8"
                         layout="joomla.form.field.list-fancy-select">
                 </field>
 				<field name="email" showon="user:email"
